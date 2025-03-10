@@ -1,0 +1,71 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4A90E2;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+textarea:focus {
+    border-color: #2c6cc7;
+}
+
+/* Character Counter */
+.char-counter {
+    margin-top: 0.5rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.char-counter span {
+    font-weight: bold;
+}
+
+.char-counter span.limit-exceeded {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
